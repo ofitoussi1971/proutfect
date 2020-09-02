@@ -5516,3 +5516,71 @@ FOREIGN KEY ("blob_id")
   ↳ db/seeds.rb:27
   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
   ↳ db/seeds.rb:27
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/" for ::1 at 2020-09-02 16:43:52 +0200
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/olivierfitoussi/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:27
+  Rendered items/index.html.erb within layouts/application (26.8ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 4.7ms)
+
+
+  
+SyntaxError (/Users/olivierfitoussi/Desktop/HACKING/THP/PROJETSTHP/PROUTFECT/app/views/layouts/application.html.erb:33: syntax error, unexpected tSTRING_BEG, expecting ')'
+...or", root_path(admin), :class="nav-link" href="#">La Team</a>
+...                              ^
+/Users/olivierfitoussi/Desktop/HACKING/THP/PROJETSTHP/PROUTFECT/app/views/layouts/application.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting ')'
+...(admin), :class="nav-link" href="#">La Team</a>
+...                           ^~~~
+/Users/olivierfitoussi/Desktop/HACKING/THP/PROJETSTHP/PROUTFECT/app/views/layouts/application.html.erb:33: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...ass="nav-link" href="#">La Team</a>
+...                           ^~~~
+/Users/olivierfitoussi/Desktop/HACKING/THP/PROJETSTHP/PROUTFECT/app/views/layouts/application.html.erb:34: unknown regexp option - l
+/Users/olivierfitoussi/Desktop/HACKING/THP/PROJETSTHP/PROUTFECT/app/views/layouts/application.html.erb:35: syntax error, unexpected '<'
+                      <span>
+                      ^
+/Users/olivierfitoussi/Desktop/HACKING/THP/PROJETSTHP/PROUTFECT/app/views/layouts/application.html.erb:37: syntax error, unexpected tFID, expecting ')'
+...          <% if user_signed_in? );@output_buffer.safe_append...
+...                ^~~~~~~~~~~~~~~
+/Users/olivierfitoussi/Desktop/HACKING/THP/PROJETSTHP/PROUTFECT/app/views/layouts/application.html.erb:85: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/layouts/application.html.erb:33: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/layouts/application.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/layouts/application.html.erb:33: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/layouts/application.html.erb:34: unknown regexp option - l
+app/views/layouts/application.html.erb:35: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:37: syntax error, unexpected tFID, expecting ')'
+app/views/layouts/application.html.erb:85: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/" for ::1 at 2020-09-02 16:47:20 +0200
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/olivierfitoussi/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:27
+  Rendered items/index.html.erb within layouts/application (25.8ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 4.4ms)
+
+
+  
+SyntaxError (/Users/olivierfitoussi/Desktop/HACKING/THP/PROJETSTHP/PROUTFECT/app/views/layouts/application.html.erb:33: syntax error, unexpected tSTRING_BEG, expecting ')'
+...or", root_path(admin), :class="nav-link" );@output_buffer.sa...
+...                              ^):
+  
+app/views/layouts/application.html.erb:33: syntax error, unexpected tSTRING_BEG, expecting ')'
+Started GET "/" for ::1 at 2020-09-02 16:47:36 +0200
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:27
+  Rendered items/index.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (15.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:35
+Completed 200 OK in 625ms (Views: 599.1ms | ActiveRecord: 21.4ms)
+
+
