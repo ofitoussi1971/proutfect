@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front page</title>
+</head>
+<body>
+
+  <!------JUMBOTRON------>
+
+  <section>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container text-center">
+        <h1 class="display-4">PUUURFECT</h1>
+        <h2 class="h3 mb-3">Des images qui vous feront ronronner de bonheur !</h2>
+      </div>
+    </div>
+  </section>
+
+  <!------INDEX------>
+
+  <h3 class="cute_kittens text-center"> ❤️ Tous nos chatons trop trop mignons ❤️ </h3><br>
+
+  <div class="container">
+    <div class="row">
+      <% @items.each do |item| %>
+
+        <div class="col col-6">
+          <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-body">
+              <a href="<%= item_path(item.id) %>">
+                <img src="<%= item.image_url %>" class="card-img-top" alt="image of the cat" style="height: 200px; width: 100%; display: block;">
+              </a>
+              <h4 class="card-title text-center"><%= item.title %></h4>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
+
